@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="nav.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+        body{
+            background-image:linear-gradient(to right,rgb(90, 158, 236),rgb(134, 206, 235))
+        }
+        .container{
+            background-image:linear-gradient(to right,orange,rgb(231, 189, 111));
+            margin-top:7rem;
+        }
+        .fa{
+           color:red;
+        }
+        .container{
+            border:1px solid blue;
+            padding:3rem;
+        }
+    </style>
+
+</head>
+<body>
+       <div class="container ">
+           <form action="/register" method="POST">
+           <div class="row">
+               <div class="col-6">
+                   <div class="form-group">
+                       <label for=""><i class="fa fa-star"></i> First Name</label>
+                       <input type="text" placeholder="Enter First Name" name="firstname" class="form-control form-control-plaintext">
+                   </div>
+                   <div class="form-group">
+                    <label for=""> <i class="fa fa-star"></i>Email</label>
+                    <input type="email"  placeholder="Enter  Email" name="email" class="form-control form-control-plaintext">
+                   </div>
+                   <div class="form-group">
+                       <label for=""><i class="fa fa-star"></i>Password</label>
+                       <input type="password" placeholder="Enter  Password" name="password" class="form-control form-control-plaintext">
+                   </div>
+                   <div class="form-group">
+                       <label for=""><i class="fa fa-star"></i>Age</label>
+                       <input type="text" name="age" placeholder="Enter  Age"  class="form-control form-control-plaintext">
+                   </div>
+                   
+               </div>
+               <div class="col-6">
+                  <div class="form-group">
+                      <label for=""><i class="fa fa-star"></i>Last Name</label>
+                      <input type="text" placeholder="Enter Last Name" name="lastname" class="form-control">
+                  </div>
+                  <div class="form-group">
+                      <label for=""><i class="fa fa-star"></i> Phone</label>
+                      <input type="tel" placeholder="Enter phone number" minlength="10" maxlength="10" name="phone" class="form-control form-control-plaintext">
+                  </div>
+                  <div class="form-group">
+                      <label for=""><i class="fa fa-star"></i> Confirm Password</label>
+                       <input type="password" placeholder="Enter Confirm Password" name="confirmpassword" class="form-control form-control-plaintext">
+                  </div>
+                  <div class="form-group">
+                       <label for=""><i class="fa fa-star"></i>Gender</label>
+                       <div class="form-check">
+                           <label for="" class="radio inline">
+                               <input type="radio" name="gender" value="male" checked>
+                               <span>male</span>
+                           </label>
+                       </div>
+                       <div class="form-check">
+                           <label for="" class="radio inline">
+                               <input type="radio" name="gender" value="female">
+                               <span>female</span>
+                           </label>
+                       </div>
+                       {{!-- <input type="submit" value="Register"> --}}
+                       <button type="submit" style="background-color:blue; border-radius:15px; padding:5px;" value="register"><span style="color:#fff;font-size:18px;margin:70px;">  Register </span></button>
+                   </div>
+               </div>
+           </div>
+           </form>
+       </div>
+</body>
+</html>
+{{!-- <div class="form-group">
+    <label for="">GENDER</label>
+      <div class="form-check">                
+          <input type="radio" class="form-check-input"  id="male">
+          <label for="male">male</label>
+      </div>
+      <div class="form-check">
+          <input type="radio" class="form-check-input" id="female">
+          <label for="female">female</label>
+      </div>
+
+   </div>   --}}
+
+           {{!-- <div class="form-group">
+                    <label for=""><li>fa <i class="fa fa-star" aria-hidden="true"></i></li> GENDER</label>
+                      <div class="form-check">                
+                          <input type="radio" class="form-check-input" name="gender"  id="male">
+                          <label for="male" class="form-check-label">male</label>
+                      </div>
+                      <div class="form-check">
+                          <input type="radio" class="form-check-input" name="gender" id="female">
+                          <label for="female" class="form-check-label">female</label>
+                      </div>
+                </div>  --}}
+
+{{!-- 
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="email" value="abc123@gmail.com" class="form-control form-control-plaintext " readonly>
+                    <label for=""> Your Email</label>
+                    <input type="email" value=" abc123@gmail.com" class="form-control form-control-plaintext">
+                   
+                </div> --}}
+{{!-- 
+                  <div class="form-group">
+                    <label for="">GENDER</label>
+                      <div class="form-check">                
+                          <input type="radio" class="form-check-input" name="gender"  id="male">
+                          <label for="male" class="form-check-label">male</label>
+                      </div>
+                      <div class="form-check">
+                          <input type="radio" class="form-check-input" name="gender" id="female">
+                          <label for="female" class="form-check-label">female</label>
+                      </div>
+        
+                   </div> --}}
